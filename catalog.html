@@ -24,29 +24,61 @@
     </header>
     <main>
       <h2>Магазин готовых проектов</h2>
-      <div>
-        <ul>
-          <li>
-            <h3>Стоимость:</h3>
-            <!-- Тут будет форма со стоимостью -->
-          </li>
-          <li>
-            <h3>Сетка:</h3>
-            <button type="button">Адаптивная</button>
-            <button type="button">Фиксированная</button>
-            <button type="button">Резиновая</button>
-          </li>
-          <li>
-            <h3>Особенности:</h3>
-            <!-- Тут будет форма с особенностями -->
-          </li>
-        </ul>
-        <button type="button">Показать</button>
-        <div>
-        <p>Сортировать:</p>
-        <!-- Тут будет форма с выбором сортировки -->
-        </div>
-        <div>
+      <section>
+        <form action="https://echo.htmlacademy.ru" method="get">
+         <fieldset>
+            <legend>Стоимость:</legend>
+              <!-- Тут будет форма со стоимостью -->
+         </fieldset>
+         <fieldset>
+           <legend>Сетка:</legend>
+           <ul>
+           <li>
+              <input type="radio" id="filter-adaptive-grid" name="grid" checked>
+              <label for="filter-adaptive-grid">Адаптивная</Label>
+            </li>
+            <li>
+               <input type="radio" id="filter-fixed-grid" name="grid">
+               <label for="filter-fixed-grid">Фиксированная</Label>
+             </li>
+             <li>
+                <input type="radio" id="filter-rubber-grid" name="grid">
+                <label for="filter-rubber-grid">Резиновая</Label>
+              </li>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="filter-slider" name="slider" checked>
+                <label for="filter-slider">Слайдер</Label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-benefits-block" name="benefits_block">
+                <label for="filter-benefits-block">Блок преимуществ</Label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-news" name="news" checked>
+                <label for="filter-news">Новости</Label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-galerey" name="galerey">
+                <label for="filter-galerey">Галерея</Label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-basket" name="basket">
+                <label for="filter-basket">Корзина</Label>
+              </li>
+             </ul>
+           </fieldset>
+           <button type="button">Показать</button>
+           <fieldset>
+             <legend>Сортировать:</legend>
+             <!-- Тут будет форма с выбором сортировки -->
+           </fieldset>
+        </form>
+      </section>
+      <section>
           <h2>Каталог</h2>
           <ul>
             <li>
@@ -90,8 +122,7 @@
           <button type="button">2</button>
           <button type="button">3</button>
           <button type="button">Следующая</button>
-        </div>
-      </div>
+      </section>
       <div>
         <div>
           <h3>NЁRDS DESIGN STUDIO</h3>
@@ -134,5 +165,24 @@
           </a>
       </ul>
     </footer>
+    <div>
+      <form action="https://echo.htmlacademy.ru" method="get">
+          <h2>Напишите нам</h2>
+          <p>
+            <label for="first-name">Ваше имя:<label>
+            <input type="text" id="first-name" name="first-name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="first-name">Ваш e-mail:<label>
+            <input type="email" id="email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="text-mail">Текст письма:<label>
+            <textarea id="text-email" name="text-mail" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="button">Закрыть</button>
+          <button type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
