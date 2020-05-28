@@ -3,29 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <nav>
-        <a>
+        <a class="logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
         </a>
-        <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+        <ul class="navigation">
+          <li><a class="studio" href="blank.html">Студия</a></li>
+          <li><a class="clients" href="blank.html">Клиенты</a></li>
+          <li><a class="shop" href="catalog.html">Магазин</a></li>
+          <li><a class="contacts" href="blank.html">Контакты</a></li>
+          <li>
+            <a class="cart" href="blank.html">
+              <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
+              Корзина
+            </a>
+          </li> 
         </ul>
-        <a href="blank.html">
-          <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
-          Корзина
-        </a>
       </nav>
     </header>
-    <main>
-      <h2>Магазин готовых проектов</h2>
+    <main class="all-catalog">
+      <h2 class="heading-catalog">Магазин готовых проектов</h2>
       <section>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
          <fieldset>
             <legend>Стоимость:</legend>
               <!-- Тут будет форма со стоимостью -->
@@ -71,49 +76,55 @@
               </li>
              </ul>
            </fieldset>
-           <button type="button">Показать</button>
+           <button  class="button-filter" type="button"><span>Показать</span></button>
            <fieldset>
              <legend>Сортировать:</legend>
              <!-- Тут будет форма с выбором сортировки -->
            </fieldset>
         </form>
       </section>
-      <section>
+      <section class="catalog-list">
           <h2>Каталог</h2>
           <ul>
             <li>
               <a href="#">
+                <img src="img/browser.svg" width="358" height="40" alt=""><br>
                 <img src="img/Mask Group-5.jpg" width="358" height="578" alt="">
               </a>
               <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
              </li>
              <li>
                <a href="#">
-                 <img src="img/Mask Group.jpg" width="358" height="580" alt="">
+                  <img src="img/browser.svg" width="358" height="40" alt=""><br>
+                  <img src="img/Mask Group.jpg" width="358" height="580" alt="">
                </a>
                <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
              </li>
              <li>
                <a href="#">
-                 <img src="img/Mask Group-3.jpg" width="358" height="580" alt="">
+                  <img src="img/browser.svg" width="358" height="40" alt=""><br>
+                  <img src="img/Mask Group-3.jpg" width="358" height="580" alt="">
                </a>
                <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
              </li>
              <li>
                <a href="#">
-                 <img src="img/Mask Group-1.jpg" width="358" height="580" alt="">
+                  <img src="img/browser.svg" width="358" height="40" alt=""><br>
+                  <img src="img/Mask Group-1.jpg" width="358" height="580" alt="">
                </a>
                <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
              </li>
              <li>
                <a href="#">
-                 <img src="img/Mask Group-4.jpg" width="358" height="580" alt="">
+                  <img src="img/browser.svg" width="358" height="40" alt=""><br>
+                  <img src="img/Mask Group-4.jpg" width="358" height="580" alt="">
                </a>
                <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
              </li>
              <li>
                <a href="#">
-                 <img src="img/Mask Group-2.jpg" width="358" height="580" alt="">
+                  <img src="img/browser.svg" width="358" height="40" alt=""><br>
+                  <img src="img/Mask Group-2.jpg" width="358" height="580" alt="">
                </a>
                <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
              </li>

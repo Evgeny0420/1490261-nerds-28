@@ -1,0 +1,126 @@
+:root {
+	--basic-color: white;
+	--header-color: #EEEEEE;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--basic-color);
+}
+
+nav {
+	background-color: var(--header-color);
+}
+
+a {
+	text-decoration: none;
+}
+
+.navigation a {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;  
+}
+
+.navigation li {
+	list-style-type: none;
+}
+
+.service-block h2 {
+	display: none;
+}	
+
+.service-block h3 {
+	font-weight: bold;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.service-block p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #309CD8;
+}
+
+.service-block li {
+	list-style-type: none;
+	padding: 10px;
+}
+
+.service-block a {
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--basic-color);
+	padding: 17px 40px 15px;
+	border-radius: 3px;
+}
+
+.service-block .order1 {
+	background-color: #FB565A;
+}
+
+.service-block .order2 {
+	background-color: #00CA74;
+}
+
+.service-block .order3 {
+	background-color: #EFC849;
+}
+
+.footer h2 {
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.footer p {
+	font-size: 16px;
+}
+
+.all-catalog .heading-catalog {
+	font-weight: 500;
+	font-size: 55px;
+	text-align: center;
+	background-color: var(--header-color);
+}
+
+.catalog-filter legend {
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;	
+}
+
+.catalog-filter fieldset {
+  border: 0 none; 
+}
+
+.catalog-filter li {
+	list-style-type: none;
+	font-size: 16px;
+}
+
+.catalog-list h2 {
+	display: none;
+}
+
+.catalog-list li {
+	list-style-type: none;
+}
+
+.button-filter span{
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.button-filter {
+	border:0 none;
+	background: #EEEEEE;
+	width: 260px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+footer li {
+	list-style-type: none;
+}
