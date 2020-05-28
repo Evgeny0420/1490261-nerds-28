@@ -1,10 +1,16 @@
 :root {
 	--basic-color: white;
 	--header-color: #EEEEEE;
+	--basic-text-color: #000000;
 }
 
 body {
+	min-width: 1180px;
+	margin: 0;
+	padding: 0;
 	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: var(--basic-text-color);
 	background-color: var(--basic-color);
 }
 
@@ -16,11 +22,25 @@ a {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .navigation a {
+	color: var(--basic-text-color);
     font-weight: 500;
-    font-size: 16px;
+    line-height: 30px;
     text-transform: uppercase;
-    color: #000000;  
+}
+
+.navigation a:hover {
+    color: #FB565A;
+}
+
+.navigation a:focus {
+	color: var(--basic-text-color);
+    opacity: 0.3;
 }
 
 .navigation li {
@@ -34,11 +54,12 @@ a {
 .service-block h3 {
 	font-weight: bold;
 	font-size: 24px;
+	line-height: 30px;
 	text-transform: uppercase;
 }
 
 .service-block p {
-	font-size: 16px;
+	line-height: 24px;
 	line-height: 24px;
 	color: #309CD8;
 }
@@ -56,25 +77,57 @@ a {
 	border-radius: 3px;
 }
 
+.service-block .text-button:focus {
+	color: var(--basic-color);
+	mix-blend-mode: normal;
+	opacity: 0.3;
+}
+
 .service-block .order1 {
 	background-color: #FB565A;
+}
+
+.service-block .order1:hover {
+	background-color: #E74246;
+}
+
+.service-block .order1:focus {
+	background: #D7373B;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	border-radius: 3px;
 }
 
 .service-block .order2 {
 	background-color: #00CA74;
 }
 
+.service-block .order2:hover {
+	background-color: #00BC6C;
+}
+
+.service-block .order2:focus {
+	background: #00AA62;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	border-radius: 3px;
+}
+
 .service-block .order3 {
 	background-color: #EFC849;
+}
+
+.service-block .order3:hover {
+	background-color: #EAB534;
+}
+
+.service-block .order3:focus {
+	background: #E5A722;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	border-radius: 3px;
 }
 
 .footer h2 {
 	font-weight: bold;
 	font-size: 36px;
-}
-
-.footer p {
-	font-size: 16px;
 }
 
 .all-catalog .heading-catalog {
@@ -96,7 +149,6 @@ a {
 
 .catalog-filter li {
 	list-style-type: none;
-	font-size: 16px;
 }
 
 .catalog-list h2 {
@@ -109,13 +161,12 @@ a {
 
 .button-filter span{
 	font-weight: 500;
-	font-size: 16px;
 	text-transform: uppercase;
 }
 
 .button-filter {
 	border:0 none;
-	background: #EEEEEE;
+	background: var(--header-color);
 	width: 260px;
     height: 50px;
     border-radius: 3px;
