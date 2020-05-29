@@ -60,8 +60,7 @@ img {
 
 .service-block p {
 	line-height: 24px;
-	line-height: 24px;
-	color: #309CD8;
+	color: #283136;;
 }
 
 .service-block li {
@@ -125,6 +124,10 @@ img {
 	border-radius: 3px;
 }
 
+.service-block .text-button:focus {    /* не работает */
+	opacity: 0.3;
+}
+
 .footer h2 {
 	font-weight: bold;
 	font-size: 36px;
@@ -172,6 +175,47 @@ img {
     border-radius: 3px;
 }
 
+.mail-window a {
+	color: #666666;
+}
+.mail-window p {
+	color: #666666;
+}
+
 footer li {
 	list-style-type: none;
+	margin: 100px;  /* временно */
 }
+
+.subscribe-link  a {
+    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+    border-radius: 50%;
+    width: 81px;
+	height: 81px;
+}
+
+.subscribe-link  a:hover {
+	background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+
+.subscribe-link a:focus {
+	background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.subscribe-link img:active {    /* не работает */
+	opacity: 0.3;
+}
+
+.subscribe-link .vk {
+	padding: 30px 27px 27px 24px; 
+}
+
+.subscribe-link .fb {
+	padding: 35px 34px 23px 32px;
+}
+
+.subscribe-link .inst {
+	padding: 34px 29px 26px 31px; 
+}
+
