@@ -28,8 +28,25 @@
       </nav>
     </header>
     <main>
-
-      <!-- Тут будет карта с контактами -->
+     <div>
+        <div class="mail-window">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>
+            191186, Санкт-Петербург, <br>
+             ул. Б. Конюшенная, д. 19/8
+          </p>
+          <a class="call" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="order1 mail-button" href="blank.html"><span class="text-button">Напишите нам</span></a>
+        </div>
+        <div>
+          <div>
+            <img src="img/map 1.jpg" width="1440" height="416" alt="Карта">
+          </div>
+          <div>
+            <img src="img/map-marker 1.svg" width="231" height="190" alt="Указатель на карте" >
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer">
@@ -38,20 +55,40 @@
       </div>
       <ul class="subscribe-link">
         <li>
-          <a href="#">
-            <img src="img/vk-icon.svg" width="26" height="15" alt="VK" >
+          <a class="vk" href="#">
+            <img src="img/vk-icon.svg" width="26" height="15" alt="VK">
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/fb-icon.svg" width="12" height="22" alt="" >
+          <a class="fb" href="#">
+            <img src="img/fb-icon.svg" width="12" height="22" alt="">
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/insta-icon.svg" width="21" alt="Instagram" >
-          </a>
+          <a class="inst" href="#"> 
+            <img src="img/insta-icon.svg" width="21" alt="Instagram">
+          </a> 
+        </li>    
       </ul>
     </footer>
+    <div>
+      <form action="https://echo.htmlacademy.ru" method="get">
+          <h2>Напишите нам</h2>
+          <p>
+            <label for="first-name">Ваше имя:<label>
+            <input type="text" id="first-name" name="first-name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="first-name">Ваш e-mail:<label>
+            <input type="email" id="email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="text-mail">Текст письма:<label>
+            <textarea id="text-email" name="text-mail" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="button">Закрыть</button>
+          <button type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
