@@ -32,6 +32,7 @@ img {
 	height: auto;
 }
 
+/* навигация */
 .navigation a {
 	color: var(--basic-text-color);
     font-weight: 500;
@@ -47,7 +48,7 @@ img {
 	color: var(--basic-text-color);
     opacity: 0.3;
 }
-
+/* слайдер */
 .slider-order {
 	font-weight: 500;
 	text-transform: uppercase;
@@ -55,7 +56,7 @@ img {
 	padding: 17px 55px 15px 52px;
 	border-radius: 3px;
 }
-
+/* блок услуг */
 .service-block h2 {
 	display: none;
 }	
@@ -88,91 +89,82 @@ img {
 	mix-blend-mode: normal;
 	opacity: 0.3;
 }
-.order1 {
+.order {
 	background-color: #FB565A;
 }
 
-.order1:hover {
+.order:hover {
 	background-color: #E74246;
 }
 
-.order1:focus {
+.order:focus {
 	background: #D7373B;
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	border-radius: 3px;
 }
 
-.service-block .order2 {
+.service-block .order-another {
 	background-color: #00CA74;
 }
 
-.service-block .order2:hover {
+.service-block .order-another:hover {
 	background-color: #00BC6C;
 }
 
-.service-block .order2:focus {
+.service-block .order-another:focus {
 	background: #00AA62;
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	border-radius: 3px;
 }
 
-.service-block .order3 {
+.service-block .order-other {
 	background-color: #EFC849;
 }
 
-.service-block .order3:hover {
+.service-block .order-other:hover {
 	background-color: #EAB534;
 }
 
-.service-block .order3:focus {
+.service-block .order-other:focus {
 	background: #E5A722;
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	border-radius: 3px;
 }
-
-.description-of-us .description-heading {
+/* вода */
+.about .description-heading {
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
 	color: #283136;
 }
 
-.description-of-us .description-functions {
+.about .description-functions {
 	font-weight: bold;
-	font-size: 16px;
-	line-height: 24px;
 	text-transform: uppercase;
 	color: #283136;
 }
 
-.description-of-us li {
+.about li {
 	line-height: 150%;
 	color: #283136;
 }
 
 .accuracy {
 	font-weight: bold;
-	font-size: 16px;
-	line-height: 24px;
 	text-transform: uppercase;
 }
 
-.accuracy-figures h3 {
+.accuracy-table th {
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 64px;
 }
 
-.accuracy-figures p {
+.accuracy-table td {
 	line-height: 18px;
 	color: #283136;
 }
-
-.footer h2 {
-	font-weight: bold;
-	font-size: 36px;
-}
-
+/* страница коталога */
 .all-catalog .heading-catalog {
 	font-weight: 500;
 	font-size: 55px;
@@ -180,10 +172,19 @@ img {
 	background-color: var(--header-color);
 }
 
-.catalog-filter legend {
+.all-catalog .legend-heading {
 	font-weight: bold;
 	font-size: 18px;
 	text-transform: uppercase;	
+}
+.sorting a {
+	color: var(--basic-text-color);
+}
+
+.sorting-type {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
 }
 
 .catalog-filter fieldset {
@@ -195,6 +196,7 @@ img {
 }
 
 .button-filter span{
+	color: var(--basic-text-color);
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -207,8 +209,14 @@ img {
     border-radius: 3px;
 }
 
-.button-filter1 {
-	width: 50px !important;
+.pagination a{
+    padding: 17px 77px 15px 78px;
+    margin-top: 100px;
+    background: var(--header-color);
+}
+
+.button-pagination {
+	padding: 17px 20px 15px 20px !important;
 }
 
 .button-filter:hover {
@@ -220,11 +228,11 @@ img {
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	border-radius: 3px;
 }
-
-.mail-window .call {
+/* контакты */
+.contacts .call {
 	color: #666666;
 }
-.mail-window p {
+.contacts p {
 	color: #666666;
 }
 
@@ -235,10 +243,16 @@ img {
 	padding: 17px 44px 15px;
 	border-radius: 3px;
 }
-
+/* футер */
 footer li {
 	 margin-top: 60px; /* временно */
 }
+
+.footer h2 {
+	font-weight: bold;
+	font-size: 36px;
+}
+
 .subscribe-link img {
 	padding: 0;
 	margin: 0;

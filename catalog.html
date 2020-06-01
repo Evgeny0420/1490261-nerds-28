@@ -9,22 +9,20 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navigation">
         <a class="logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
         </a>
-        <ul class="navigation">
-          <li><a class="studio" href="blank.html">Студия</a></li>
-          <li><a class="clients" href="blank.html">Клиенты</a></li>
-          <li><a class="shop" href="catalog.html">Магазин</a></li>
-          <li><a class="contacts" href="blank.html">Контакты</a></li>
-          <li>
-            <a class="cart" href="blank.html">
-              <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
-              Корзина
-            </a>
-          </li> 
-        </ul>
+        <ul>
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>    
+        <a class="cart" href="blank.html">
+            <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
+            Корзина
+        </a>
       </nav>
     </header>
     <main class="all-catalog">
@@ -32,11 +30,11 @@
       <section>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
          <fieldset>
-            <legend>Стоимость:</legend>
+            <legend class="legend-heading">Стоимость:</legend>
               <!-- Тут будет форма со стоимостью -->
          </fieldset>
          <fieldset>
-           <legend>Сетка:</legend>
+           <legend class="legend-heading">Сетка:</legend>
            <ul>
            <li>
               <input type="radio" id="filter-adaptive-grid" name="grid" checked>
@@ -52,7 +50,7 @@
               </li>
           </fieldset>
           <fieldset>
-            <legend>Особенности:</legend>
+            <legend class="legend-heading" >Особенности:</legend>
             <ul>
               <li>
                 <input type="checkbox" id="filter-slider" name="slider" checked>
@@ -76,15 +74,35 @@
               </li>
              </ul>
            </fieldset>
-           <button  class="button-filter" type="button"><span class="text-button">Показать</span></button>
-           <fieldset>
-             <legend>Сортировать:</legend>
-             <!-- Тут будет форма с выбором сортировки -->
-           </fieldset>
+           <button  class="order button-filter" type="submit"><span class="text-button">Показать</span></button>
         </form>
       </section>
       <section class="catalog-list">
           <h2>Каталог</h2>
+          <div class="sorting">
+            <p class="legend-heading">Сортировать:</p>
+            <div>
+              <ul class="sorting-type">
+                <li>
+                  <a href="#">По цене</a>
+                </li>
+                <li>
+                  <a href="#">По типу</a>
+                </li>
+                <li>
+                  <a href="#">По названию</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">вниз</a>
+                </li>
+                <li>
+                  <a href="#">вверх</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <ul>
             <li>
               <a href="#">
@@ -129,20 +147,30 @@
                <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
              </li>
           </ul>
-          <button class="button-filter button-filter1" type="button" disabled><span class="text-button">1</span></button>
-          <button class="button-filter button-filter1" type="button"><span class="text-button">2</span></button>
-          <button class="button-filter button-filter1" type="button"><span class="text-button">3</span></button>
-          <button class="button-filter" type="button"><span class="text-button">Следующая</span></button>
+          <ul class="pagination">
+            <li>
+              <a class="button-filter button-pagination" href="#" disabled><span class="text-button">1</span></a>
+            </li>
+            <li>  
+              <a class="button-filter button-pagination" href="#"><span class="text-button">2</span></a>
+            </li>
+            <li>   
+              <a class="button-filter button-pagination" href="#"><span class="text-button">3</span></a>
+            </li>
+            <li>   
+              <a class="button-filter" href="#"><span class="text-button">Следующая</span></a>
+            </li>  
+          </ul>
       </section>
       <div>
-        <div class="mail-window">
+        <div class="contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>
             191186, Санкт-Петербург, <br>
              ул. Б. Конюшенная, д. 19/8
           </p>
           <a class="call" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a class="order1 mail-button" href="blank.html"><span class="text-button">Напишите нам</span></a>
+          <a class="order mail-button" href="blank.html"><span class="text-button">Напишите нам</span></a>
         </div>
         <div>
           <div>
