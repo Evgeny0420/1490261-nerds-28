@@ -9,160 +9,165 @@
   </head>
   <body>
     <header>
-      <nav class="navigation">
-        <a class="logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
-        </a>
-        <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>    
-        <a class="cart" href="blank.html">
-            <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
-            Корзина
-        </a>
-      </nav>
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="blank.html">Студия</a></li>
+            <li><a href="blank.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>    
+          <a class="cart" href="blank.html">
+              <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
+              Корзина
+          </a>
+        </nav>
+      </div>
     </header>
     <main class="all-catalog">
-      <h2 class="heading-catalog">Магазин готовых проектов</h2>
-      <section>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-         <fieldset>
-            <legend class="legend-heading">Стоимость:</legend>
-              <!-- Тут будет форма со стоимостью -->
-         </fieldset>
-         <fieldset>
-           <legend class="legend-heading">Сетка:</legend>
-           <ul>
-           <li>
-              <input type="radio" id="filter-adaptive-grid" name="grid" checked>
-              <label for="filter-adaptive-grid">Адаптивная</Label>
-            </li>
-            <li>
-               <input type="radio" id="filter-fixed-grid" name="grid">
-               <label for="filter-fixed-grid">Фиксированная</Label>
-             </li>
-             <li>
-                <input type="radio" id="filter-rubber-grid" name="grid">
-                <label for="filter-rubber-grid">Резиновая</Label>
-              </li>
-          </fieldset>
-          <fieldset>
-            <legend class="legend-heading" >Особенности:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" id="filter-slider" name="slider" checked>
-                <label for="filter-slider">Слайдер</Label>
-              </li>
-              <li>
-                <input type="checkbox" id="filter-benefits-block" name="benefits_block">
-                <label for="filter-benefits-block">Блок преимуществ</Label>
-              </li>
-              <li>
-                <input type="checkbox" id="filter-news" name="news" checked>
-                <label for="filter-news">Новости</Label>
-              </li>
-              <li>
-                <input type="checkbox" id="filter-galerey" name="galerey">
-                <label for="filter-galerey">Галерея</Label>
-              </li>
-              <li>
-                <input type="checkbox" id="filter-basket" name="basket">
-                <label for="filter-basket">Корзина</Label>
-              </li>
-             </ul>
-           </fieldset>
-           <button  class="order button-filter" type="submit"><span class="text-button">Показать</span></button>
-        </form>
-      </section>
-      <section class="catalog-list">
-          <h2 class="visualy-hidden">Каталог</h2>
-          <div class="sorting">
-            <p class="legend-heading">Сортировать:</p>
-            <div>
-              <ul class="sorting-type">
-                <li>
-                  <a href="#">По цене</a>
-                </li>
-                <li>
-                  <a href="#">По типу</a>
-                </li>
-                <li>
-                  <a href="#">По названию</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="#">вниз</a>
-                </li>
-                <li>
-                  <a href="#">вверх</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <ul>
-            <li>
-              <a href="#">
-                <img src="img/browser.svg" width="358" height="40" alt=""><br>
-                <img src="img/Mask Group-5.jpg" width="358" height="578" alt="">
-              </a>
-              <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
-             </li>
-             <li>
-               <a href="#">
-                  <img src="img/browser.svg" width="358" height="40" alt=""><br>
-                  <img src="img/Mask Group.jpg" width="358" height="580" alt="">
-               </a>
-               <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
-             </li>
-             <li>
-               <a href="#">
-                  <img src="img/browser.svg" width="358" height="40" alt=""><br>
-                  <img src="img/Mask Group-3.jpg" width="358" height="580" alt="">
-               </a>
-               <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
-             </li>
-             <li>
-               <a href="#">
-                  <img src="img/browser.svg" width="358" height="40" alt=""><br>
-                  <img src="img/Mask Group-1.jpg" width="358" height="580" alt="">
-               </a>
-               <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
-             </li>
-             <li>
-               <a href="#">
-                  <img src="img/browser.svg" width="358" height="40" alt=""><br>
-                  <img src="img/Mask Group-4.jpg" width="358" height="580" alt="">
-               </a>
-               <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
-             </li>
-             <li>
-               <a href="#">
-                  <img src="img/browser.svg" width="358" height="40" alt=""><br>
-                  <img src="img/Mask Group-2.jpg" width="358" height="580" alt="">
-               </a>
-               <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
-             </li>
-          </ul>
-          <ul class="pagination">
-            <li>
-              <a class="order button-filter button-pagination" href="#" disabled><span class="text-button">1</span></a>
-            </li>
-            <li>  
-              <a class="order button-filter button-pagination" href="#"><span class="text-button">2</span></a>
-            </li>
-            <li>   
-              <a class="order button-filter button-pagination" href="#"><span class="text-button">3</span></a>
-            </li>
-            <li>   
-              <a class="order button-filter" href="#"><span class="text-button">Следующая</span></a>
-            </li>  
-          </ul>
-      </section>
-      <div>
+      <div class="heading-catalog">
+        <h2>Магазин готовых шаблонов</h2>
+      </div>  
+      <div class="catalog-content container">
+            <section>
+              <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+                <fieldset class="price">
+                  <legend class="legend-heading">Стоимость:</legend>
+                    <!-- Тут будет форма со стоимостью -->
+                </fieldset>
+                <fieldset>
+                  <legend class="legend-heading">Сетка:</legend>
+                  <ul>
+                    <li>
+                      <input type="radio" id="filter-adaptive-grid" name="grid" checked>
+                      <label for="filter-adaptive-grid">Адаптивная</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="filter-fixed-grid" name="grid">
+                      <label for="filter-fixed-grid">Фиксированная</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="filter-rubber-grid" name="grid">
+                      <label for="filter-rubber-grid">Резиновая</label>
+                    </li>
+                  </ul> 
+                </fieldset>
+                <fieldset>
+                  <legend class="legend-heading" >Особенности:</legend>
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="filter-slider" name="slider" checked>
+                      <label for="filter-slider">Слайдер</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter-benefits-block" name="benefits_block">
+                      <label for="filter-benefits-block">Блок преимуществ</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter-news" name="news" checked>
+                      <label for="filter-news">Новости</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter-galerey" name="galerey">
+                      <label for="filter-galerey">Галерея</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="filter-basket" name="basket">
+                      <label for="filter-basket">Корзина</label>
+                    </li>
+                   </ul>
+                 </fieldset>
+                 <button  class="order button-filter" type="submit"><span class="text-button">Показать</span></button>
+              </form>
+            </section>
+            <section class="catalog-list">
+                <h2 class="visualy-hidden">Каталог</h2>
+                <div class="sorting">
+                  <p class="legend-heading">Сортировать:</p>
+                  <ul class="sorting-type">
+                    <li>
+                      <a href="#">По цене</a>
+                    </li>
+                    <li>
+                      <a href="#">По типу</a>
+                    </li>
+                    <li>
+                      <a href="#">По названию</a>
+                    </li>
+                  </ul>
+                  <ul class="sorting-type">
+                    <li>
+                      <a href="#">вниз</a>
+                    </li>
+                    <li>
+                      <a href="#">вверх</a>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="product">
+                  <li>
+                    <a href="#">
+                      <img src="img/browser.svg" width="358" height="40" alt="1"><br>
+                      <img src="img/Mask-Group-5.jpg" width="358" height="578" alt="1">
+                    </a>
+                    <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
+                   </li>
+                   <li>
+                     <a href="#">
+                        <img src="img/browser.svg" width="358" height="40" alt="2"><br>
+                        <img src="img/Mask-Group.jpg" width="358" height="580" alt="2">
+                     </a>
+                     <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
+                   </li>
+                   <li>
+                     <a href="#">
+                        <img src="img/browser.svg" width="358" height="40" alt="3"><br>
+                        <img src="img/Mask-Group-3.jpg" width="358" height="580" alt="3">
+                     </a>
+                     <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
+                   </li>
+                   <li>
+                     <a href="#">
+                        <img src="img/browser.svg" width="358" height="40" alt="4"><br>
+                        <img src="img/Mask-Group-1.jpg" width="358" height="580" alt="4">
+                     </a>
+                     <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
+                   </li>
+                   <li>
+                     <a href="#">
+                        <img src="img/browser.svg" width="358" height="40" alt="5"><br>
+                        <img src="img/Mask-Group-4.jpg" width="358" height="580" alt="5">
+                     </a>
+                     <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
+                   </li>
+                   <li>
+                     <a href="#">
+                        <img src="img/browser.svg" width="358" height="40" alt="6"><br>
+                        <img src="img/Mask-Group-2.jpg" width="358" height="580" alt="6">
+                     </a>
+                     <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
+                   </li>
+                </ul>
+                <ul class="pagination">
+                  <li>
+                    <a class="order button-filter button-pagination" href="#"><span class="text-button">1</span></a>
+                  </li>
+                  <li>  
+                    <a class="order button-filter button-pagination" href="#"><span class="text-button">2</span></a>
+                  </li>
+                  <li>   
+                    <a class="order button-filter button-pagination" href="#"><span class="text-button">3</span></a>
+                  </li>
+                  <li>   
+                    <a class="order button-filter" href="#"><span class="text-button">Следующая</span></a>
+                  </li>  
+                </ul>
+            </section>
+      </div>     
+      <div class="maps">
         <div class="contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>
@@ -174,51 +179,55 @@
         </div>
         <div>
           <div>
-            <img src="img/map 1.jpg" width="1440" height="416" alt="Карта">
+            <img src="img/map_1.jpg" width="1440" height="416" alt="Карта">
           </div>
           <div>
-            <img src="img/map-marker 1.svg" width="231" height="190" alt="Указатель на карте" >
+            <img src="img/map-marker_1.svg" width="231" height="190" alt="Указатель на карте" >
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="footer">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="container">
+        <section class="footer">
+          <ul class="subscribe-link">
+            <li>
+              <a class="vk" href="#">
+                <img class="text-button" src="img/vk-icon.svg" width="26" height="15" alt="VK">
+              </a>
+            </li>
+            <li>
+              <a class="fb" href="#">
+                <img class="text-button" src="img/fb-icon.svg" width="12" height="22" alt="Fb">
+              </a>
+            </li>
+            <li>
+              <a class="inst" href="#"> 
+                <img class="text-button" src="img/insta-icon.svg" width="21" alt="Instagram">
+              </a> 
+            </li>    
+          </ul>
+          <div class="sail">
+            <h2>Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </section>  
       </div>
-      <ul class="subscribe-link">
-        <li>
-          <a class="vk" href="#">
-            <img class="text-button" src="img/vk-icon.svg" width="26" height="15" alt="VK">
-          </a>
-        </li>
-        <li>
-          <a class="fb" href="#">
-            <img class="text-button" src="img/fb-icon.svg" width="12" height="22" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="inst" href="#"> 
-            <img class="text-button" src="img/insta-icon.svg" width="21" alt="Instagram">
-          </a> 
-        </li>    
-      </ul>
     </footer>
     <div>
       <form action="https://echo.htmlacademy.ru" method="get">
           <h2>Напишите нам</h2>
           <p>
-            <label for="first-name">Ваше имя:<label>
+            <label for="first-name">Ваше имя:</label>
             <input type="text" id="first-name" name="first-name" placeholder="Имя Фамилия">
           </p>
           <p>
-            <label for="first-name">Ваш e-mail:<label>
+            <label for="first-name">Ваш e-mail:</label>
             <input type="email" id="email" name="email" placeholder="email@example.com">
           </p>
           <p>
-            <label for="text-mail">Текст письма:<label>
-            <textarea id="text-email" name="text-mail" placeholder="В свободной форме"></textarea>
+            <label for="text-mail">Текст письма:</label>
+            <textarea id="text-mail" name="text-mail" placeholder="В свободной форме"></textarea>
           </p>
           <button type="button">Закрыть</button>
           <button type="submit">Отправить</button>

@@ -147,7 +147,8 @@ a:focus .text-button{
 	justify-content: space-between;
 	padding:0;
 	padding-top: 65px;
-	padding-bottom: 68px;
+	padding-bottom: 80px;
+	border-bottom: 2px solid var(--header-color); 
   	
 }
 .service-block li {
@@ -164,7 +165,7 @@ a:focus .text-button{
 }
 
 .service-block p {
-	color: #283136;;
+	color: #283136;
 }
 
 .service-block a {
@@ -174,7 +175,7 @@ a:focus .text-button{
 	border-radius: 3px;
 }
 .service-block-content .order {
-	margin-top: 27px;
+	margin-top: 30px;
 }
 
 .order-first {
@@ -221,11 +222,10 @@ a:focus .text-button{
 /* вода */
 .about-us {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	column-gap: 20px;
-	padding-top: 25px;
-	padding-left: 10px;
-	border-top: 1px solid var(--header-color); 
+	grid-template-columns: auto auto;
+	column-gap: 138px;
+	padding-top: 10px;
+	
 
 }
 .about .description-heading {
@@ -233,25 +233,55 @@ a:focus .text-button{
 	font-size: 45px;
 	line-height: 45px;
 	color: #283136;
+	margin-bottom: 35px;
 }
 
 .about .description-functions {
+	margin-bottom: 
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #283136;
+	margin-top: 40px;
 }
-
+.about ul {
+	padding: 0;
+}
 .about li {
+	display: flex;
+	align-items: center;
 	line-height: 150%;
 	color: #283136;
+	padding-top: 5px;
+	margin-bottom: 20px;
+}
+.about .dash{	
+	width: 25px;
+	height: 2px;
+	margin-right: 12px;
+	background: #FB565A;
 }
 
-.accuracy {
+
+.about-text {
+	padding-left: 10px;
+}
+
+.about-percent {
+	margin-top: 10px;
+	display:flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.accuracy {	
+	margin: 35px 0 0 10px;
+	align-self: center;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .accuracy-table th {
+	text-align: left;
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 64px;
@@ -261,12 +291,38 @@ a:focus .text-button{
 	line-height: 18px;
 	color: #283136;
 }
+
+.friends {
+	display: none;
+}
+
+.maps {
+	display: none;
+}
+
 /* страница коталога */
-.all-catalog .heading-catalog {
+
+.price {
+	display: none;   /* временно*/
+} 
+
+.heading-catalog {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 235px;
+	background-color: var(--header-color);
+}
+
+.all-catalog h2 {
 	font-weight: 500;
 	font-size: 55px;
-	text-align: center;
-	background-color: var(--header-color);
+	padding-bottom: 40px;
+}
+
+.catalog-content {
+	display: flex;
 }
 
 .all-catalog .legend-heading {
@@ -274,11 +330,39 @@ a:focus .text-button{
 	font-size: 18px;
 	text-transform: uppercase;	
 }
+
+.sorting {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+}
+
+.catalog-list {
+	display: flex;
+	flex-direction: column;
+	margin-left: 110px;
+}
+
+.product {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto min-content;
+	gap: 41px;
+}
+
+.pagination {
+	display: flex;
+}
+.pagination li{
+    margin-right: 11px;
+}
+
 .sorting a {
 	color: var(--basic-text-color);
 }
 
 .sorting-type {
+	display: flex;
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -338,9 +422,26 @@ a:focus .text-button{
 .footer h2 {
 	font-weight: bold;
 	font-size: 36px;
+	margin-bottom: 20px;
+}
+.footer {
+	display: flex;
+	height: 217px;
+	justify-content: space-between;
+	align-items: center;
 }
 
+.footer .sail {
+	padding-right: 210px;
+}
 
+.subscribe-link {
+	display: flex;
+	padding-left: 10px;
+}
+.subscribe-link li {
+	padding-right: 9px;
+}
 .subscribe-link  a {
 	display: flex;
 	justify-content: center;
