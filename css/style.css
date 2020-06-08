@@ -254,13 +254,13 @@ a:focus .text-button{
 	padding-top: 5px;
 	margin-bottom: 20px;
 }
-.about .dash{	
+.function::before {	
+    content: "";
 	width: 25px;
 	height: 2px;
 	margin-right: 12px;
 	background: #FB565A;
 }
-
 
 .about-text {
 	padding-left: 10px;
@@ -348,6 +348,12 @@ a:focus .text-button{
 	grid-template-columns: auto auto;
 	grid-template-rows: auto min-content;
 	gap: 41px;
+}
+
+.product a {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
 }
 
 .pagination {

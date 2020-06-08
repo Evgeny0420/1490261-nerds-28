@@ -9,24 +9,27 @@
   </head>
   <body>
     <header>
-      <nav class="navigation">
-        <a class="logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
-        </a>
-        <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>    
-        <a class="cart" href="blank.html">
-            <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
-            Корзина
-        </a>
-      </nav>
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="blank.html">Студия</a></li>
+            <li><a href="blank.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>    
+          <a class="cart" href="blank.html">
+              <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
+              Корзина
+          </a>
+        </nav>
+      </div>
     </header>
     <main>
      <div>
+        <div class="maps">
         <div class="contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>
@@ -38,51 +41,55 @@
         </div>
         <div>
           <div>
-            <img src="img/map 1.jpg" width="1440" height="416" alt="Карта">
+            <img src="img/map_1.jpg" width="1440" height="416" alt="Карта">
           </div>
           <div>
-            <img src="img/map-marker 1.svg" width="231" height="190" alt="Указатель на карте" >
+            <img src="img/map-marker_1.svg" width="231" height="190" alt="Указатель на карте" >
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="footer">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="container">
+        <section class="footer">
+          <ul class="subscribe-link">
+            <li>
+              <a class="vk" href="#">
+                <img class="text-button" src="img/vk-icon.svg" width="26" height="15" alt="VK">
+              </a>
+            </li>
+            <li>
+              <a class="fb" href="#">
+                <img class="text-button" src="img/fb-icon.svg" width="12" height="22" alt="Fb">
+              </a>
+            </li>
+            <li>
+              <a class="inst" href="#"> 
+                <img class="text-button" src="img/insta-icon.svg" width="21" alt="Instagram">
+              </a> 
+            </li>    
+          </ul>
+          <div class="sail">
+            <h2>Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </section>  
       </div>
-      <ul class="subscribe-link">
-        <li>
-          <a class="vk" href="#">
-            <img src="img/vk-icon.svg" width="26" height="15" alt="VK">
-          </a>
-        </li>
-        <li>
-          <a class="fb" href="#">
-            <img src="img/fb-icon.svg" width="12" height="22" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="inst" href="#"> 
-            <img src="img/insta-icon.svg" width="21" alt="Instagram">
-          </a> 
-        </li>    
-      </ul>
     </footer>
     <div>
       <form action="https://echo.htmlacademy.ru" method="get">
           <h2>Напишите нам</h2>
           <p>
-            <label for="first-name">Ваше имя:<label>
+            <label for="first-name">Ваше имя:</label>
             <input type="text" id="first-name" name="first-name" placeholder="Имя Фамилия">
           </p>
           <p>
-            <label for="first-name">Ваш e-mail:<label>
+            <label for="first-name">Ваш e-mail:</label>
             <input type="email" id="email" name="email" placeholder="email@example.com">
           </p>
           <p>
-            <label for="text-mail">Текст письма:<label>
-            <textarea id="text-email" name="text-mail" placeholder="В свободной форме"></textarea>
+            <label for="text-mail">Текст письма:</label>
+            <textarea id="text-mail" name="text-mail" placeholder="В свободной форме"></textarea>
           </p>
           <button type="button">Закрыть</button>
           <button type="submit">Отправить</button>
