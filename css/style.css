@@ -69,6 +69,21 @@ a:focus .text-button{
 	align-items: flex-end;
 	width: 1160px;
 }
+
+.navigation li {
+	position: relative;
+}
+.navigation .catalog-underscores::after {
+	content: "";
+	width: 74px;
+    height: 2px;
+    background: #FB565A;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+
+}
+
 .navigation a {
 	color: var(--basic-text-color);
     font-weight: 500;
@@ -80,7 +95,8 @@ a:focus .text-button{
     color: #FB565A;
 }
 
-.navigation a:focus {
+.navigation a:focus,
+.navigation a:active {
 	color: var(--basic-text-color);
     opacity: 0.3;
 }
@@ -363,8 +379,84 @@ a:focus .text-button{
 /* страница коталога */
 
 .price {
-	display: none;   /* временно*/
+	margin: 0;
+    padding: 0;
 } 
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
 
 .heading-catalog {
 	display: flex;
