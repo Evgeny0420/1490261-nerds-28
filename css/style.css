@@ -299,39 +299,6 @@ a:focus .text-button{
 	align-items: center;
 }
 
-
-.htmlacademy-icon {
-	display: block;
-	width: 199px;
-	height: 68px;
-	background-image: url(../img/Group5.svg);
-
-}
-
-.borodinsky-icon {
-	display: block;
-	width: 209px;
-	height: 90px;
-	background-image: url(../img/logo-2_1.svg);
-	margin: 0 0 10px 0;
-}
-
-.pink-icon {
-	display: block;
-	width: 185px;
-	height: 52px;
-	background-image: url(../img/logo-3_1.svg);
-	margin: 0 22px 10px 0;
-}
-
-.mishka-icon {
-	display: block;
-	width: 173px;
-	height: 84px;
-	background-image: url(../img/logo-4_1.svg);
-	margin-right: 35px;
-}
-
 .friends a {
 	opacity: 0.2;
 }
