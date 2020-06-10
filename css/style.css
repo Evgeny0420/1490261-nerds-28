@@ -225,7 +225,7 @@ a:focus .text-button{
 	grid-template-columns: auto auto;
 	column-gap: 138px;
 	padding: 10px 0 55px;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid var(--header-color);
 	
 
 }
@@ -292,11 +292,55 @@ a:focus .text-button{
 	line-height: 18px;
 	color: #283136;
 }
+.friends {
+	border-bottom: 2px solid var(--header-color);
+}
 
 .friends ul {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	margin-top: 46px; 
+	margin-bottom: 36px;
+}
+
+.friends li {
+	position: relative;
+}
+
+.friends li:first-child {
+    margin-right: 96px;
+    margin-top: 18px;
+}
+
+.friends li:nth-child(2) {
+    margin-right: 102px;
+}
+
+.friends li:nth-child(3) {
+	margin-top: 20px;
+    margin-right: 120px;
+}
+
+.friends li:last-child {
+    margin-top: 8px;
+}
+
+.friends li:not(:last-child)::after {
+	content: "";
+	width: 2px;
+    height: 52px;
+    background: var(--header-color);
+    position: absolute;
+    top: 0;
+    left: 247px;
+}
+
+.friends li:nth-child(3)::after {
+    left: 241px;
+}
+
+.friends li:nth-child(2)::after {
+    top: 16px;
+    left: 252px;
 }
 
 .friends a {
