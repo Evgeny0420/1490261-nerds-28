@@ -80,7 +80,7 @@ a:focus .text-button{
     background: #FB565A;
     position: absolute;
     top: 43px;
-    left: 0px;
+    left: 1px;
 
 }
 
@@ -139,15 +139,16 @@ a:focus .text-button{
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
+	margin-bottom: 26px;
 }
 
 .slider .slider-water {
 	color: #283136;
+	margin-bottom: 38px;
 } 
 
 .slider {
 	background-color: var(--header-color); 
-	display: none; /* временно*/
 }
 
 .slider-order {
@@ -156,6 +157,40 @@ a:focus .text-button{
 	color: var(--basic-color);
 	background-color: #FB565A;
 	border-radius: 3px;
+	margin-bottom: 56px;
+}
+
+.slider-flex {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 10px; 
+	padding-top: 15px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.slider-img:first-child {
+	position: absolute;
+	left: 408px;
+	top: -8px;
+}
+
+.slider button {
+	padding: 0;
+	width: 18px;
+	height: 18px;
+	background: var(--basic-color);
+	border-radius: 50%;
+	border: none;
+
+} 
+
+.slide {
+	display: none;
+}
+
+.slide-current {
+	display: block;
 }
 /* блок услуг */
 .service-block-content {
