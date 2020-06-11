@@ -434,10 +434,7 @@ a:focus .text-button{
     opacity: 0.1;
 }
 
-.maps {
-	display: inline-block;
-	background: url(../img/map_1.jpg) 416px 100% no-repeat;;
-}
+
 
 /* страница коталога */
 
@@ -565,15 +562,48 @@ a:focus .text-button{
 	gap: 41px;
 }
 
-.product a {
+.link-product {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
+	position: relative;
 }
+.buy-order {
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+	text-align: center;
+	width: 360px;
+	height: 231px;
+	background: var(--header-color); 
+	position: absolute;
+	bottom:-200px;
+}
+.buy-order-button {   
+    width: 200px;
+	height: 50px;
+	color: var(--basic-color);
+	border-radius: 3px;
+}
+
+.buy-order h3 {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--basic-text-color);
+}
+
+.buy-order p {
+	color: #666666;
+}
+
+
 
 .pagination {
 	display: flex;
 }
+
 .pagination li{
     margin-right: 11px;
 }
@@ -624,6 +654,25 @@ a:focus .text-button{
 
 
 /* контакты */
+.maps {
+	margin-top: 78px;
+}
+
+.contacts-container {
+	position: relative;
+}
+.contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 319px;
+	height: 308px;
+	position: absolute;
+	bottom:64px;
+	left: 7px;
+	background: var(--basic-color);
+}
 .contacts .call {
 	color: #666666;
 }
@@ -643,11 +692,11 @@ a:focus .text-button{
 .footer h2 {
 	font-weight: bold;
 	font-size: 36px;
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 }
 .footer {
 	display: flex;
-	height: 217px;
+	height: 205px;
 	justify-content: space-between;
 	align-items: center;
 }
