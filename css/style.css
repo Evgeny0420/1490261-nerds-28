@@ -149,6 +149,11 @@ a:focus .text-button{
 
 .slider {
 	background-color: var(--header-color); 
+	padding-bottom: 73px;
+}
+
+.slider-section {
+	position: relative;
 }
 
 .slider-order {
@@ -157,7 +162,7 @@ a:focus .text-button{
 	color: var(--basic-color);
 	background-color: #FB565A;
 	border-radius: 3px;
-	margin-bottom: 56px;
+	
 }
 
 .slider-flex {
@@ -175,6 +180,12 @@ a:focus .text-button{
 	top: -8px;
 }
 
+.slider-img:nth-child(2) {
+	position: absolute;
+	left: 408px;
+	top: -8px;
+}
+
 .slider button {
 	padding: 0;
 	width: 18px;
@@ -182,8 +193,17 @@ a:focus .text-button{
 	background: var(--basic-color);
 	border-radius: 50%;
 	border: none;
-
+	cursor: pointer;
 } 
+.slider-controls {
+	position: absolute;
+	z-index: 30;
+	top: 308px;
+	left: 545px;
+	display: flex;
+	width: 88px;
+	justify-content: space-between;
+}
 
 .slide {
 	display: none;
@@ -192,12 +212,19 @@ a:focus .text-button{
 .slide-current {
 	display: block;
 }
+
+.slider-controls .current {
+	background-image: url(../img/Ellipse_8.svg);
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+
 /* блок услуг */
 .service-block-content {
 	display: flex;
 	justify-content: space-between;
 	padding:0;
-	padding-top: 65px;
+	padding-top: 62px;
 	padding-bottom: 80px;
 	border-bottom: 2px solid var(--header-color); 
   	
@@ -226,7 +253,7 @@ a:focus .text-button{
 	border-radius: 3px;
 }
 .service-block-content .order {
-	margin-top: 30px;
+	margin-top: 29px;
 }
 
 .order-first {
@@ -408,7 +435,8 @@ a:focus .text-button{
 }
 
 .maps {
-	display: none;
+	display: inline-block;
+	background: url(../img/map_1.jpg) 416px 100% no-repeat;;
 }
 
 /* страница коталога */
