@@ -81,7 +81,6 @@ a:focus .text-button{
     position: absolute;
     top: 43px;
     left: 1px;
-
 }
 
 .navigation a {
@@ -101,17 +100,15 @@ a:focus .text-button{
     opacity: 0.3;
 }
 
-.logo {
-	padding-left: 10px; 
-}
 
 .site-navigation {
 	display:flex;
+	margin-right: 6px;
+	margin-bottom: 19px;
 }
 
 .site-navigation li {
-	margin-right: 46px;
-
+	margin-right: 45px;
 }
 
 .cart-icon {
@@ -119,7 +116,7 @@ a:focus .text-button{
 }
 
 .cart {
-	margin: 0 -5px 16px 30px;
+	margin: 0 0 18px 30px;
 }
 
 
@@ -160,7 +157,6 @@ a:focus .text-button{
 	width: 240px;
 	height: 50px;
 	color: var(--basic-color);
-	background-color: #FB565A;
 	border-radius: 3px;
 	
 }
@@ -168,22 +164,21 @@ a:focus .text-button{
 .slider-flex {
 	display: flex;
 	justify-content: space-between;
-	padding-left: 10px; 
-	padding-top: 15px;
+	padding-top: 13px;
 	margin-bottom: 10px;
 	position: relative;
 }
 
 .slider-img:first-child {
 	position: absolute;
-	left: 408px;
-	top: -8px;
+	left: 397px;
+	top: -10px;
 }
 
 .slider-img:nth-child(2) {
 	position: absolute;
 	left: 408px;
-	top: -8px;
+	top: -10px;
 }
 
 .slider button {
@@ -198,8 +193,8 @@ a:focus .text-button{
 .slider-controls {
 	position: absolute;
 	z-index: 30;
-	top: 308px;
-	left: 545px;
+	top: 307px;
+	left: 536px;
 	display: flex;
 	width: 88px;
 	justify-content: space-between;
@@ -230,8 +225,7 @@ a:focus .text-button{
   	
 }
 .service-block li {
-	padding-left: 10px;
-	margin-right: 50px;
+	margin-right: 60px;
 
 }
 
@@ -240,6 +234,7 @@ a:focus .text-button{
 	font-size: 24px;
 	line-height: 20px;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 .service-block p {
@@ -253,7 +248,7 @@ a:focus .text-button{
 	border-radius: 3px;
 }
 .service-block-content .order {
-	margin-top: 29px;
+	margin-top: 33px;
 }
 
 .order-first {
@@ -302,7 +297,7 @@ a:focus .text-button{
 	display: grid;
 	grid-template-columns: auto auto;
 	column-gap: 138px;
-	padding: 10px 0 55px;
+	padding: 12px 0 57px;
     border-bottom: 2px solid var(--header-color);
 	
 
@@ -312,7 +307,7 @@ a:focus .text-button{
 	font-size: 45px;
 	line-height: 45px;
 	color: #283136;
-	margin-bottom: 35px;
+	margin-bottom: 33px;
 }
 
 .about .description-functions {
@@ -330,8 +325,8 @@ a:focus .text-button{
 	align-items: center;
 	line-height: 150%;
 	color: #283136;
-	padding-top: 5px;
-	margin-bottom: 20px;
+	padding-top: 7px;
+	margin-bottom: 17px;
 }
 .function::before {	
     content: "";
@@ -339,10 +334,6 @@ a:focus .text-button{
 	height: 2px;
 	margin-right: 12px;
 	background: #FB565A;
-}
-
-.about-text {
-	padding-left: 10px;
 }
 
 .about-percent {
@@ -527,10 +518,12 @@ a:focus .text-button{
 	background-color: var(--header-color);
 }
 
-.all-catalog h2 {
+.heading-catalog h2 {
 	font-weight: 500;
 	font-size: 55px;
-	padding-bottom: 40px;
+	margin-top:41px;
+	margin-bottom: 85px;
+	margin-right:17px;
 }
 
 .catalog-content {
@@ -568,6 +561,32 @@ a:focus .text-button{
 	margin: auto;
 	position: relative;
 }
+
+.link-product img {
+	border-top: 40px solid rgb(30%, 30%, 30%, 0.12);
+	border-radius: 3px 3px 0 0;
+}
+
+.link-product .img-product {
+	border-top: 40px solid rgb(30%, 30%, 30%, 1);
+}	
+
+
+.link-product::before,
+.link-product::before,
+.link-product::before {
+	content: "";
+	display: flex;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	margin: 1px;
+	background: var(--basic-color);
+	position: absolute;
+	z-index: 100;
+	top:0;
+}
+
 .buy-order {
 	display: flex;
 	flex-direction: column; 
@@ -577,15 +596,26 @@ a:focus .text-button{
 	height: 231px;
 	background: var(--header-color); 
 	position: absolute;
-	bottom:-200px;
+	bottom:0;
 }
 .buy-order-button {   
     width: 200px;
 	height: 50px;
 	color: var(--basic-color);
+	background-color: #FB565A;
 	border-radius: 3px;
+	cursor: pointer;
 }
 
+.buy-order-button:hover {
+	background-color: #E74246;
+}
+
+.buy-order-button:active {
+	background: #D7373B;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	border-radius: 3px;
+}
 .buy-order h3 {
 	font-weight: bold;
 	font-size: 18px;
@@ -684,7 +714,6 @@ a:focus .text-button{
 	width: 219px;
 	height: 50px;
 	color: var(--basic-color);
-	background-color: #FB565A;
 	border-radius: 3px;
 }
 /* футер */
