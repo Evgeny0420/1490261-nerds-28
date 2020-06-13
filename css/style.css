@@ -91,12 +91,12 @@ a:focus .text-button{
     text-transform: uppercase;
 }
 
-.navigation a:hover {
+.text-link:hover {
     color: #FB565A;
 }
 
-.navigation a:focus,
-.navigation a:active {
+.text-link:focus,
+.text-link:active {
 	color: var(--basic-text-color);
     opacity: 0.3;
 }
@@ -104,6 +104,7 @@ a:focus .text-button{
 
 .site-navigation {
 	display:flex;
+	flex-wrap: wrap;
 	margin-right: 6px;
 	margin-bottom: 19px;
 }
@@ -338,30 +339,47 @@ a:focus .text-button{
 }
 
 .about-percent {
-	margin-top: 10px;
+	margin: 0;
 	display:flex;
 	flex-direction: column;
 	align-items: flex-end;
 }
+.accuracy-img {
+	margin-top: 11px;
+	margin-bottom: 30px;
+}
 
 .accuracy {	
-	margin: 35px 0 0 10px;
+	margin: 0;
+	margin-left: 8px;
+	margin-bottom: 27px;
 	align-self: center;
 	font-weight: bold;
 	text-transform: uppercase;
 }
+.accuracy-table {
+	margin-right: 10px;
+}
 
-.accuracy-table th {
+.accuracy-table .percent {
 	text-align: left;
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 64px;
+	padding: 0px 19px 9px 0px;
 }
 
-.accuracy-table td {
+.percent sup {
+	font-size: 28px;
+}
+
+.accuracy-table .percent-description {
 	line-height: 18px;
 	color: #283136;
 }
+
+
+/* друзья */
 .friends {
 	border-bottom: 2px solid var(--header-color);
 }
@@ -369,29 +387,33 @@ a:focus .text-button{
 .friends ul {
 	display: flex;
 	margin-top: 46px; 
-	margin-bottom: 36px;
+	margin-bottom: 37px;
+	flex-wrap: wrap;
+	padding:0;
 }
 
 .friends li {
+	display:flex;
+	justify-content: center;
+	align-items: center;
 	position: relative;
+	width: 290px;
 }
 
 .friends li:first-child {
-    margin-right: 96px;
-    margin-top: 18px;
+  
 }
 
 .friends li:nth-child(2) {
-    margin-right: 102px;
+   
 }
 
 .friends li:nth-child(3) {
-	margin-top: 20px;
-    margin-right: 120px;
+	
 }
 
 .friends li:last-child {
-    margin-top: 8px;
+   
 }
 
 .friends li:not(:last-child)::after {
@@ -400,17 +422,16 @@ a:focus .text-button{
     height: 52px;
     background: var(--header-color);
     position: absolute;
-    top: 0;
-    left: 247px;
+    top: 18px;
+    left: 279px;
 }
 
 .friends li:nth-child(3)::after {
-    left: 241px;
+    left: 299px;
 }
 
 .friends li:nth-child(2)::after {
-    top: 16px;
-    left: 252px;
+    left: 289px;
 }
 
 .friends a {
@@ -563,7 +584,7 @@ a:focus .text-button{
 	margin: auto;
 	position: relative;
 	border-top: 40px solid rgb(30%, 30%, 30%, 0.12);
-	border-radius: 3px 3px 0 0;
+	border-radius: 4px 4px 0 0;
 }
 .link-product:hover {
 	border-top: 40px solid rgb(30%, 30%, 30%, 1);
@@ -571,9 +592,7 @@ a:focus .text-button{
 	border-radius: 5px;
 }
 
-.first-product {
-	border-top: 40px solid rgb(30%, 30%, 30%, 1);
-}	
+
 
 
 .link-product .circle {
@@ -608,7 +627,7 @@ a:focus .text-button{
 }
 
 .hover-order {
-	display:block;
+	display:flex;
 }
 
 
@@ -621,6 +640,7 @@ a:focus .text-button{
 	border-radius: 3px;
 	cursor: pointer;
 	margin:0;
+	border: none;
 }
 
 .buy-order-button:hover {
@@ -632,7 +652,7 @@ a:focus .text-button{
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	border-radius: 3px;
 }
-.buy-order h3 {
+.buy-order a {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
@@ -693,6 +713,7 @@ a:focus .text-button{
     height: 50px;
 }
 
+
 .button-filter:hover {
 	background: #DFDFDF;
 }
@@ -706,7 +727,12 @@ a:focus .text-button{
 
 /* контакты */
 .maps {
-	margin-top: 78px;
+	margin-top: 80px;
+}
+
+iframe {
+	width: 100%;
+	border: none;
 }
 
 .contacts-container {

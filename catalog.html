@@ -11,16 +11,16 @@
     <header>
       <div class="container">
         <nav class="navigation">
-          <a class="logo" href="index.html">
+          <a class="logo text-link" href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
           </a>
           <ul class="site-navigation">
-            <li><a href="blank.html">Студия</a></li>
-            <li><a href="blank.html">Клиенты</a></li>
-            <li class="catalog-underscores"><a href="catalog.html">Магазин</a></li>
-            <li><a href="blank.html">Контакты</a></li>
+            <li><a class="text-link" href="blank.html">Студия</a></li>
+            <li><a class="text-link" href="blank.html">Клиенты</a></li>
+            <li class="catalog-underscores"><a class="text-link" href="catalog.html">Магазин</a></li>
+            <li><a class="text-link" href="blank.html">Контакты</a></li>
           </ul>    
-          <a class="cart" href="blank.html">  
+          <a class="cart text-link" href="blank.html">  
               <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
               <span>Корзина</span>
           </a>
@@ -33,6 +33,7 @@
       </div>  
       <div class="catalog-content container">
             <section>
+              <h2 class="visualy-hidden">Фильтры</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="price">
                   <legend class="legend-heading">Стоимость:</legend>
@@ -132,85 +133,94 @@
                 </div>
                 <ul class="product">
                   <li class="block-product">
-                    <a class="link-product first-product" href="#">
+                    <div class="link-product">
                       <div class="circles">
                         <span class="circle"></span>
                         <span class="circle"></span>
                         <span class="circle"></span>
                       </div>
-                      <img src="img/Mask-Group-5.jpg" width="360" height="580" alt="Sedona">
-                      <div class="buy-order">
-                        <h3 class="buy-header">Sedona</h3>
-                        <p class="buy-water">Информационный сайт <br>для туристов</p>
-                        <span class="order buy-order-button" >9 900 ₽</span>
-                      </div>
-                    </a>
-                    <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
-                   </li>
-                   <li>
-                    <a class="link-product" href="#">
-                      <div class="circles">
-                        <span class="circle"></span>
-                        <span class="circle"></span>
-                        <span class="circle"></span>
-                      </div>
-                      <img src="img/Mask-Group.jpg" width="358" height="578" alt="2">
-                      <div class="buy-order click-order">
-                        <h3 class="buy-header">Pink app</h3>
-                        <p class="buy-water">Продуктивный лендинг <br>приложения для iOS и Android</p>
-                        <span class="order buy-order-button" >9 900 ₽</span>
-                      </div>
-                    </a>
-                     <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
-                   </li>
-                   <li>
-                     <a class="link-product" href="#">
-                      <div class="circles">
-                        <span class="circle"></span>
-                        <span class="circle"></span>
-                        <span class="circle"></span>
-                      </div>
-                      <img src="img/Mask-Group-3.jpg" width="358" height="578" alt="3">
+                      <img src="img/Mask-Group-5.jpg" width="358" height="578" alt="Sedona">
                       <div class="buy-order click-order hover-order">
-                        <h3 class="buy-header">Pink app</h3>
+                        <a class="buy-header text-link" href="#">Sedona</a>
+                        <p class="buy-water">Информационный сайт <br>для туристов</p>
+                        <button class="order buy-order-button" type="button">9 900 ₽</button>
+                      </div>
+                    </div>
+                   </li>
+                   <li>
+                    <div class="link-product">
+                      <div class="circles">
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                      </div>
+                      <img src="img/Mask-Group.jpg" width="358" height="578" alt="Pink">
+                      <div class="buy-order click-order">
+                        <a class="buy-header text-link" href="#">Pink app</a>
                         <p class="buy-water">Продуктивный лендинг <br>приложения для iOS и Android</p>
-                        <span class="order buy-order-button" >9 900 ₽</span>
+                        <button class="order buy-order-button" type="button">9 900 ₽</button>
                       </div>
-                     </a>
-                     <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
+                    </div>
                    </li>
                    <li>
-                     <a class="link-product" href="#">
+                     <div class="link-product">
                       <div class="circles">
                         <span class="circle"></span>
                         <span class="circle"></span>
                         <span class="circle"></span>
                       </div>
-                        <img src="img/Mask-Group-1.jpg" width="358" height="578" alt="4">
-                     </a>
-                     <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
+                      <img src="img/Mask-Group-3.jpg" width="358" height="578" alt="Barbershop">
+                      <div class="buy-order click-order">
+                        <a class="buy-header text-link" href="#">Barbershop</a>
+                        <p class="buy-water">Сайт салона красоты.<br>Для мужчин, да.</p>
+                        <button class="order buy-order-button" type="button">9 900 ₽</button>
+                      </div>
+                     </div>
                    </li>
                    <li>
-                     <a class="link-product"href="#">
+                     <div class="link-product">
                       <div class="circles">
                         <span class="circle"></span>
                         <span class="circle"></span>
                         <span class="circle"></span>
                       </div>
-                        <img src="img/Mask-Group-4.jpg" width="358" height="578" alt="5">
-                     </a>
-                     <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
+                      <img src="img/Mask-Group-1.jpg" width="358" height="578" alt="Mishka">
+                      <div class="buy-order click-order">
+                        <a class="buy-header text-link" href="#">Mishka</a>
+                        <p class="buy-water">Интернет мгазин<br>вязанных игрушек</p>
+                        <button class="order buy-order-button" type="button">9 900 ₽</button>
+                      </div>
+                     </div>
                    </li>
                    <li>
-                     <a class="link-product" href="#">
+                     <div class="link-product">
                       <div class="circles">
                         <span class="circle"></span>
                         <span class="circle"></span>
                         <span class="circle"></span>
                       </div>
-                        <img src="img/Mask-Group-2.jpg" width="358" height="578" alt="6">
-                     </a>
-                     <!-- Тут будет кнопка заказа с описанием при наведении курсора -->
+                      <img src="img/Mask-Group-4.jpg" width="358" height="578" alt="A_plus">                  
+                      <div class="buy-order click-order">
+                        <a class="buy-header text-link" href="#">A plus</a>
+                        <p class="buy-water">Лендинг курсов повышения<br>квалификации</p>
+                        <button class="order buy-order-button" type="button">9 900 ₽</button>
+                      </div>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="link-product">
+                      <div class="circles">
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                      </div>
+                      <img src="img/Mask-Group-2.jpg" width="358" height="578" alt="Кваст">
+                      <div class="buy-order click-order">
+                        <a class="buy-header text-link" href="#">Кваст</a>
+                        <p class="buy-water">Промо-сайт производителя<br>крафтового кваса</p>
+                        <button class="order buy-order-button" type="button">9 900 ₽</button>
+                      </div>
+                     </div>
                    </li>
                 </ul>
                 <ul class="pagination">
@@ -229,9 +239,9 @@
                 </ul>
             </section>
       </div>     
-      <div class="maps">
+     <div class="maps">
         <h2 class="visualy-hidden">Карата</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858715867313!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1591904425259!5m2!1sru!2sru" width="100%" height="416px" frameborder="0" allowfullscreen ></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858715867313!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1591904425259!5m2!1sru!2sru" height="416" allowfullscreen ></iframe>
         <div class="contacts-container container">
           <div class="contacts">
             <h3>Nёrds design studio</h3>
@@ -240,7 +250,7 @@
                ул. Б. Конюшенная, д. 19/8
             </p>
             <a class="call" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-            <a class="order mail-button" href="blank.html"><span class="text-button">Напишите нам</span></a>
+            <a class="order mail-button order-first" href="blank.html"><span class="text-button">Напишите нам</span></a>
           </div>
         </div>
       </div>
