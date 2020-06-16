@@ -76,9 +76,10 @@ a:focus .text-button{
 }
 .navigation .catalog-underscores::after {
 	content: "";
-	width: 74px;
+	width: 98%;
     height: 2px;
     background: var(--basic-button-color);
+
     position: absolute;
     top: 43px;
     left: 1px;
@@ -535,34 +536,64 @@ a:focus .text-button{
   display: block;
   cursor: pointer;
   user-select: none;
+  padding-bottom: 17px;
 }
 
-.filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
-  color: var(--special);
-}
 
 .filter-input-checkbox + label::before {
-  content: "";
-  position: absolute;
-  left: -42px;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #000000;
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #4D4D4D;;
+	border-radius: 3px;
+	opacity: 0.3;
 }
 
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: -38px;
-  width: 12px;
-  height: 12px;
-  background-image: url("img/cross.svg");
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/shape.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.3;
 }
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top:-1px;
+  width: 18px;
+  height: 18px;
+  border: 4px solid #4D4D4D;;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -34px;
+  width: 10px;
+  height:10px;
+  background-color: #4D4D4D;;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.filter-input-checkbox:checked + label::after:hover {
+  opacity: 1;
+}
+
+
 .heading-catalog {
 	display: flex;
 	flex-direction: column;
@@ -571,7 +602,7 @@ a:focus .text-button{
 	height: 235px;
 	background-color: var(--header-color);
 }
-
+ 
 .heading-catalog h2 {
 	font-weight: 500;
 	font-size: 55px;
@@ -626,7 +657,7 @@ a:focus .text-button{
 
 .link-product:before {
 	content: "";
-	background-image: url(../img/Circle.png);
+	background-image: url(../img/Circle.svg);
 	display: block;
 	width: 61px;
 	height: 14px;
@@ -653,7 +684,6 @@ a:focus .text-button{
 .hover-order {
 	display:flex;
 }
-
 
 
 .buy-order-button {   

@@ -20,9 +20,9 @@
             <li class="catalog-underscores"><a class="text-link" href="catalog.html">Магазин</a></li>
             <li><a class="text-link" href="blank.html">Контакты</a></li>
           </ul>    
-          <a class="cart text-link" href="blank.html">  
+          <a class="cart" href="blank.html">  
               <img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
-              <span>Корзина</span>
+              <span class="text-link">Корзина</span>
           </a>
         </nav>
       </div>
@@ -65,16 +65,16 @@
                 <fieldset>
                   <legend class="legend-heading">Сетка:</legend>
                   <ul>
-                    <li>
-                      <input class="visually-hidden" type="radio" id="filter-adaptive-grid" name="grid" checked>
+                    <li class="filter-option filter-radio">
+                      <input class="visualy-hidden filter-input-radio" type="radio" id="filter-adaptive-grid" name="grid" checked>
                       <label for="filter-adaptive-grid">Адаптивная</label>
                     </li>
-                    <li>
-                      <input class="visually-hidden" type="radio" id="filter-fixed-grid" name="grid">
+                    <li class="filter-option filter-radio">
+                      <input class="visualy-hidden filter-input-radio" type="radio" id="filter-fixed-grid" name="grid">
                       <label for="filter-fixed-grid">Фиксированная</label>
                     </li>
-                    <li>
-                      <input class="visually-hidden" type="radio" id="filter-rubber-grid" name="grid">
+                    <li class="filter-option filter-radio">
+                      <input class="visualy-hidden filter-input-radio" type="radio" id="filter-rubber-grid" name="grid">
                       <label for="filter-rubber-grid">Резиновая</label>
                     </li>
                   </ul> 
@@ -83,23 +83,23 @@
                   <legend class="legend-heading" >Особенности:</legend>
                   <ul>
                     <li class="filter-option filter-checkbox">
-                      <input class="visualy-hidden filter-ibnput-checkbox filter-input" type="checkbox" id="filter-slider" name="slider" checked>
+                      <input class="visualy-hidden filter-input-checkbox" type="checkbox" id="filter-slider" name="slider" checked>
                       <label for="filter-slider">Слайдер</label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                      <input class="visualy-hidden filter-ibnput-checkbox filter-input" type="checkbox" id="filter-benefits-block" name="benefits_block">
+                      <input class="visualy-hidden filter-input-checkbox" type="checkbox" id="filter-benefits-block" name="benefits_block">
                       <label for="filter-benefits-block">Блок преимуществ</label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                      <input class="visualy-hidden filter-ibnput-checkbox filter-input" type="checkbox" id="filter-news" name="news" checked>
+                      <input class="visualy-hidden filter-input-checkbox" type="checkbox" id="filter-news" name="news" checked>
                       <label for="filter-news">Новости</label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                      <input class="visualy-hidden filter-ibnput-checkbox filter-input" type="checkbox" id="filter-galerey" name="galerey">
+                      <input class="visualy-hidden filter-input-checkbox" type="checkbox" id="filter-galerey" name="galerey">
                       <label for="filter-galerey">Галерея</label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                      <input class="visualy-hidden filter-ibnput-checkbox filter-input" type="checkbox" id="filter-basket" name="basket">
+                      <input class="visualy-hidden filter-input-checkbox" type="checkbox" id="filter-basket" name="basket">
                       <label for="filter-basket">Корзина</label>
                     </li>
                    </ul>
@@ -271,5 +271,6 @@
           <button type="submit">Отправить</button>
       </form>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
