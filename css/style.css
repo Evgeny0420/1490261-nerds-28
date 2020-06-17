@@ -798,14 +798,29 @@ fieldset {
 }
 
 
+
+
 .button-filter:hover {
 	background: #DFDFDF;
 }
 
+.button-filter:active,
 .button-filter:focus {
 	background: #D5D5D5;
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	border-radius: 3px;
+}
+
+.button-pagination-active,
+.button-pagination-active:hover,
+.button-pagination-active:active,
+.button-pagination-active:focus {
+	width:44px;
+	height:44px;
+	cursor: default;
+    border: 3px solid #DBDBDB;
+    background-color: var(--basic-color);
+    box-shadow: none;
 }
 
 
