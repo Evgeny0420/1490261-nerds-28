@@ -966,9 +966,9 @@ iframe {
 
 
 /*модальное окно*/
-/*.modal-window {
+.modal-window {
 	display: none;
-}*/
+}
 
 .modal {
 	position:fixed;
