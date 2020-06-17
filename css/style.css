@@ -667,8 +667,43 @@ a:focus .text-button{
 
 .filter-list {
 	margin-top: 55px;
-	
 }
+.sorting-type li {
+	position: relative;
+	margin-right: 18px;
+}
+
+
+.dir {
+	position: absolute;
+	top:-9px;
+	left:0;
+	width: 11px;
+	height: 10px;
+	background-image: url(../img/icon-dir.svg);
+	background-repeat: no-repeat;
+	mix-blend-mode: normal;
+	opacity: 0.2;
+}
+
+.up {
+	transform: rotate(180deg);
+}
+
+.dir:hover {
+	mix-blend-mode: none;
+	opacity: 1;
+}
+.active-dir,
+.dir:active,
+.dir:focus {
+	background-image: url(../img/icon-active-dir.svg);
+	mix-blend-mode: none;
+	opacity: 1;
+}
+
+
+
 /* список товара*/
 .product {
 	display: grid;
