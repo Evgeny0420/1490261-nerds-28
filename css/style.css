@@ -966,9 +966,9 @@ iframe {
 
 
 /*модальное окно*/
-.modal-window {
+/*.modal-window {
 	display: none;
-}
+}*/
 
 .modal {
 	position:fixed;
@@ -996,6 +996,16 @@ iframe {
 	border:2px solid #D7DCDE;
 	border-radius: 3px;
 }
+
+.mail-form:hover {
+	border-color: #B4B9BB;
+}
+
+.mail-form:focus {
+	border-color: var(--basic-text-color);
+}
+
+
 .mail-textarea {
 width: 760px;
 height: 118px;
