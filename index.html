@@ -218,25 +218,29 @@
         </section>  
       </div>
     </footer>
-    <div>
+    <section class="modal modal-window">
       <form action="https://echo.htmlacademy.ru" method="get">
-          <h2>Напишите нам</h2>
-          <p>
-            <label for="first-name">Ваше имя:</label>
-            <input type="text" id="first-name" name="first-name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="first-name">Ваш e-mail:</label>
-            <input type="email" id="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
+        <div class="mail-container">
+          <h2 class="window-heading">Напишите нам</h2>
+          <div class="name-email">
+            <p>
+              <label for="first-name">Ваше имя:</label>
+              <input class="mail-form" type="text" id="first-name" name="first-name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="first-name">Ваш e-mail:</label>
+              <input class="mail-form " type="email" id="email" name="email" placeholder="email@example.com">
+            </p>
+          </div>
+          <p class="textarea">
             <label for="text-mail">Текст письма:</label>
-            <textarea id="text-mail" name="text-mail" placeholder="В свободной форме"></textarea>
+            <textarea class="mail-form mail-textarea" id="text-mail" name="text-mail" placeholder="В свободной форме"></textarea>
           </p>
-          <button type="button">Закрыть</button>
-          <button type="submit">Отправить</button>
+          <button class="order order-first button-submit" type="submit">Отправить</button>
+        </div>  
       </form>
-    </div>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
