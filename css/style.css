@@ -655,19 +655,27 @@ a:focus .text-button{
 	display: flex;
 	align-items: baseline;
 	justify-content: space-around;
+	margin-bottom: 33px;
 }
 
 .catalog-list {
 	display: flex;
 	flex-direction: column;
-	margin-left: 110px;
+	margin-left: 100px;
+	margin-top: 37px;
+}
+
+.filter-list {
+	margin-top: 55px;
+	
 }
 /* список товара*/
 .product {
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto;
-	gap:30px;
+	gap:40px;
+	margin-top: 0;
 }
 
 	
