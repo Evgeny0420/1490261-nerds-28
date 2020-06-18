@@ -702,6 +702,28 @@ a:focus .text-button{
 	opacity: 1;
 }
 
+fieldset {
+	border: 0 none; 
+  }
+  
+.button-filter span{
+	color: var(--basic-text-color);
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.button-filter {
+	border:0 none;
+	width: 260px;
+	height: 50px;
+	background: var(--header-color);
+	border-radius: 3px;
+}
+
+.button-filter:active .text-button-opacity,
+.button-filter:focus .text-button-opacity {
+	color: rgba(0, 0, 0, 0.3);
+}
 
 
 /* список товара*/
@@ -817,23 +839,7 @@ a:focus .text-button{
 	text-transform: uppercase;
 }
 
-fieldset {
-  border: 0 none; 
-}
 
-.button-filter span{
-	color: var(--basic-text-color);
-	font-weight: 500;
-	text-transform: uppercase;
-}
-
-.button-filter {
-	border:0 none;
-	width: 260px;
-    height: 50px;
-	background: var(--header-color);
-    border-radius: 3px;
-}
 
 .button-pagination {
 	width: 50px;
