@@ -2,6 +2,8 @@
 	--basic-color: white;
 	--header-color: #EEEEEE;
 	--basic-text-color: #000000;
+	--nav-link-active-color: rgba(0, 0, 0, 0.3);
+	--text-link-active: rgba(255, 255, 255, 0.3);
 	--basic-button-color: #FB565A;
 }
 
@@ -34,15 +36,6 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-/* grid */
-
-html {
-	height: 100%;
-}
-
-body {
-	min-height: 100%;
-}
 
 .container {
   width: 1160px;
@@ -51,17 +44,31 @@ body {
 }
 
 /* все ссылки-кнопки */
-.order {
+
+.most-links {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-weight: 500;
+	line-height: 18px;
 	text-transform: uppercase;
+	color: var(--basic-color);
+	background-color: var(--basic-button-color);
+	border-radius: 3px;
 }
 
-a:focus .text-button{ 
-	opacity: 0.3;
+.most-links:hover {
+	background-color: #E74246;
 }
+
+.most-links:focus,
+.most-links:active { 
+	background: #D7373B;
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	border-radius: 3px;
+	color: var(--text-link-active);
+}
+
 /* навигация */
 
 .navigation {
@@ -86,9 +93,9 @@ a:focus .text-button{
 }
 
 .navigation a {
-	color: var(--basic-text-color);
     font-weight: 500;
-    line-height: 30px;
+	line-height: 30px;
+	color: var(--basic-text-color);
     text-transform: uppercase;
 }
 
@@ -98,8 +105,7 @@ a:focus .text-button{
 
 .text-link:focus,
 .text-link:active {
-	color: var(--basic-text-color);
-    opacity: 0.3;
+	color: var(--nav-link-active-color)
 }
 
 
@@ -142,7 +148,7 @@ a:focus .text-button{
 	margin-bottom: 26px;
 }
 
-.slider .slider-water {
+.slider .slider-description {
 	color: #283136;
 	margin-bottom: 38px;
 } 
@@ -156,12 +162,9 @@ a:focus .text-button{
 	position: relative;
 }
 
-.slider-order {
+.slider-link {
 	width: 240px;
 	height: 50px;
-	color: var(--basic-color);
-	border-radius: 3px;
-	
 }
 
 .slider-flex {
@@ -212,7 +215,7 @@ a:focus .text-button{
 }
 
 .slider-controls .current {
-	background-image: url(../img/Ellipse_8.svg);
+	background-image: url(../img/ellipse_8.svg);
 	background-repeat: no-repeat;
 	background-position:center center;
 }
@@ -229,7 +232,6 @@ a:focus .text-button{
 }
 .service-block li {
 	margin-right: 60px;
-
 }
 
 .service-block h3 {
@@ -247,53 +249,34 @@ a:focus .text-button{
 .service-block a {
 	width: 160px;
 	height: 50px;
-	color: var(--basic-color);
-	border-radius: 3px;
 }
-.service-block-content .order {
+
+.service-block-content .most-links {
 	margin-top: 33px;
 }
 
-.order-first {
-	background-color: var(--basic-button-color);
-}
-
-.order-first:hover {
-	background-color: #E74246;
-}
-
-.order-first:focus {
-	background: #D7373B;
-	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	border-radius: 3px;
-}
-
-.order-second {
+.link-second {
 	background-color: #00CA74;
 }
 
-.order-second:hover {
+.link-second:hover {
 	background-color: #00BC6C;
 }
 
-.order-second:focus {
+.link-second:focus {
 	background: #00AA62;
-	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	border-radius: 3px;
 }
 
-.service-block .order-third {
+.service-block .link-third {
 	background-color: #EFC849;
 }
 
-.service-block .order-third:hover {
+.service-block .link-third:hover {
 	background-color: #EAB534;
 }
 
-.service-block .order-third:focus {
+.service-block .link-third:focus {
 	background: #E5A722;
-	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	border-radius: 3px;
 }
 /* вода */
 .about-us {
@@ -401,19 +384,15 @@ a:focus .text-button{
 }
 
 .friends li:first-child {
-  
 }
 
 .friends li:nth-child(2) {
-   
 }
 
 .friends li:nth-child(3) {
-	
 }
 
-.friends li:last-child {
-   
+.friends li:last-child { 
 }
 
 .friends li:not(:last-child)::after {
@@ -594,7 +573,7 @@ a:focus .text-button{
 .filter-input-checkbox + label:hover::after,
 .filter-input-checkbox + label:active::after,
 .filter-input-checkbox + label:focus::after{
-	background-image: url("../img/Shape-active.svg");
+	background-image: url("../img/shape-active.svg");
 	z-index: 100;
 	
 	
@@ -617,7 +596,7 @@ a:focus .text-button{
     border-color: #EDEDED;
 }
 .filter-input-checkbox:disabled + label::after {
-	background-image: url("../img/Shape-disabled.svg");
+	background-image: url("../img/shape-disabled.svg");
 }
 
 .filter-input-radio:disabled + label::after {
@@ -712,7 +691,7 @@ a:focus .text-button{
 	transform: rotate(180deg);
 }
 
-.all-dir:hover {
+.dir:hover {
 	mix-blend-mode: none;
 	opacity: 1;
 }
@@ -728,22 +707,18 @@ fieldset {
 	border: 0 none; 
   }
   
-.button-filter span{
-	color: var(--basic-text-color);
-	font-weight: 500;
-	text-transform: uppercase;
-}
+
 
 .button-filter {
 	border:0 none;
 	width: 260px;
 	height: 50px;
 	background: var(--header-color);
-	border-radius: 3px;
+	color: var(--basic-text-color);
 }
 
-.button-filter:active .text-button-opacity,
-.button-filter:focus .text-button-opacity {
+.button-filter:active,
+.button-filter:focus {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -774,7 +749,7 @@ fieldset {
 
 .link-product:before {
 	content: "";
-	background-image: url(../img/Circle.svg);
+	background-image: url(../img/circle.svg);
 	display: block;
 	width: 61px;
 	height: 14px;
@@ -840,8 +815,6 @@ fieldset {
 	margin-bottom: 33px;
 }
 
-
-
 .pagination {
 	display: flex;
 }
@@ -861,15 +834,10 @@ fieldset {
 	text-transform: uppercase;
 }
 
-
-
 .button-pagination {
 	width: 50px;
     height: 50px;
 }
-
-
-
 
 .button-filter:hover {
 	background: #DFDFDF;
@@ -894,9 +862,9 @@ fieldset {
 	box-shadow: none;
 }
 
-.button-pagination-active:active .text-button,
-.button-pagination-active:focus .text-button {
-	opacity: 1;
+.button-pagination-active:active,
+.button-pagination-active:focus {
+	color: var(--basic-text-color);
 }
 
 
@@ -948,8 +916,6 @@ iframe {
 .mail-button {
 	width: 219px;
 	height: 50px;
-	color: var(--basic-color);
-	border-radius: 3px;
 }
 /* футер */
 
@@ -984,16 +950,21 @@ iframe {
 	height: 81px;
     background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
     border-radius: 50%;
-    
 }
 
 .subscribe-link  a:hover {
 	background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
 }
 
+.subscribe-link a:active,
 .subscribe-link a:focus {
 	background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.subscribe-link a:active .social-networks,
+.subscribe-link a:focus .social-networks {
+	opacity: 0.3;
 }
 
 
@@ -1072,8 +1043,6 @@ height: 118px;
 	border: none;
 	width: 259px;
 	height: 50px;
-	border-radius: 3px;
-	color: var(--basic-color)
 }
 
 .mail-container label {

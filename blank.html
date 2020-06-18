@@ -11,13 +11,13 @@
     <header>
       <div class="container">
         <nav class="navigation">
-          <a class="logo text-link" href="index.html">
+          <a class="logo">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
           </a>
           <ul class="site-navigation">
             <li><a class="text-link" href="blank.html">Студия</a></li>
             <li><a class="text-link" href="blank.html">Клиенты</a></li>
-            <li class="catalog-underscores"><a class="text-link" href="catalog.html">Магазин</a></li>
+            <li><a class="text-link" href="catalog.html">Магазин</a></li>
             <li><a class="text-link" href="blank.html">Контакты</a></li>
           </ul>    
           <a class="cart" href="blank.html">  
@@ -39,7 +39,7 @@
                ул. Б. Конюшенная, д. 19/8
             </p>
             <a class="call" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-            <a class="order mail-button order-first" href="blank.html"><span class="text-button">Напишите нам</span></a>
+            <a class="most-links mail-button" href="blank.html">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -50,17 +50,17 @@
           <ul class="subscribe-link">
             <li>
               <a class="vk" href="#">
-                <img class="text-button" src="img/vk-icon.svg" width="26" height="15" alt="VK">
+                <img class="social networks" src="img/vk-icon.svg" width="26" height="15" alt="VK">
               </a>
             </li>
             <li>
               <a class="fb" href="#">
-                <img class="text-button" src="img/fb-icon.svg" width="12" height="22" alt="Fb">
+                <img class="social networks" src="img/fb-icon.svg" width="12" height="22" alt="Fb">
               </a>
             </li>
             <li>
               <a class="inst" href="#"> 
-                <img class="text-button" src="img/insta-icon.svg" width="21" alt="Instagram">
+                <img class="social-networks" src="img/insta-icon.svg" width="21" alt="Instagram">
               </a> 
             </li>    
           </ul>
@@ -71,25 +71,29 @@
         </section>  
       </div>
     </footer>
-    <div>
+    <section class="modal modal-window">
       <form action="https://echo.htmlacademy.ru" method="get">
-          <h2>Напишите нам</h2>
-          <p>
-            <label for="first-name">Ваше имя:</label>
-            <input type="text" id="first-name" name="first-name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="first-name">Ваш e-mail:</label>
-            <input type="email" id="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
+        <div class="mail-container">
+          <h2 class="window-heading">Напишите нам</h2>
+          <div class="name-email">
+            <p>
+              <label for="first-name">Ваше имя:</label>
+              <input class="mail-form" type="text" id="first-name" name="first-name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="first-name">Ваш e-mail:</label>
+              <input class="mail-form " type="email" id="email" name="email" placeholder="email@example.com">
+            </p>
+          </div>
+          <p class="textarea">
             <label for="text-mail">Текст письма:</label>
-            <textarea id="text-mail" name="text-mail" placeholder="В свободной форме"></textarea>
+            <textarea class="mail-form mail-textarea" id="text-mail" name="text-mail" placeholder="В свободной форме"></textarea>
           </p>
-          <button type="button">Закрыть</button>
-          <button type="submit">Отправить</button>
+          <button class="most-links button-submit" type="submit">Отправить</button>
+        </div>  
       </form>
-    </div>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
