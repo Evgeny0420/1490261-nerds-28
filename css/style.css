@@ -670,7 +670,29 @@ a:focus .text-button{
 }
 .sorting-type li {
 	position: relative;
-	margin-right: 18px;
+	margin-right: 20px;
+}
+
+.text-dir {
+	mix-blend-mode: normal;
+	opacity: 0.3;
+}
+
+.text-dir:hover {
+	mix-blend-mode: normal;
+	opacity: 0.6;
+}
+
+.text-dir:hover {
+	mix-blend-mode: normal;
+	opacity: 0.6;
+}
+
+.text-dir-active,
+.text-dir:active,
+.text-dir:focus {
+	mix-blend-mode: none;
+	opacity: 1;
 }
 
 
@@ -690,7 +712,7 @@ a:focus .text-button{
 	transform: rotate(180deg);
 }
 
-.dir:hover {
+.all-dir:hover {
 	mix-blend-mode: none;
 	opacity: 1;
 }
@@ -869,7 +891,12 @@ fieldset {
 	cursor: default;
     border: 3px solid #DBDBDB;
     background-color: var(--basic-color);
-    box-shadow: none;
+	box-shadow: none;
+}
+
+.button-pagination-active:active .text-button,
+.button-pagination-active:focus .text-button {
+	opacity: 1;
 }
 
 
