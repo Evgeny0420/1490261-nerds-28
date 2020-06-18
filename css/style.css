@@ -386,7 +386,7 @@ img {
 	position: relative;
 	width: 290px;
 }
-
+/*
 .friends li:first-child {
 }
 
@@ -397,7 +397,7 @@ img {
 }
 
 .friends li:last-child { 
-}
+}*/
 
 .friends li:not(:last-child)::after {
 	content: "";
