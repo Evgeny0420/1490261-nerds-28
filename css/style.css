@@ -270,6 +270,10 @@ img {
 	margin-top: 33px;
 }
 
+.service-block-content figure {
+  margin:0;
+}
+
 .link-second {
 	background-color: #00CA74;
 }
@@ -920,6 +924,10 @@ fieldset {
 	border-radius: 5px;
 }
 
+.link-product:hover .click-order {
+  display: flex;
+}
+
 .link-product:before {
 	content: "";
 	background-image: url(../img/circle.svg);
@@ -1080,15 +1088,16 @@ fieldset {
 
 
 .mail-textarea {
-width: 730px;
-height: 96px;
-padding: 10px 13px;
+  width: 730px;
+  height: 96px;
+  padding: 10px 13px;
+  resize: none;
 }
 
 .modal-close {
 	position: absolute;
 	top: 78px;
-	right: 90px;
+	right: 112px;
 	width: 22px;
 	height: 22px;
 	background-color: transparent;
@@ -1127,7 +1136,7 @@ padding: 10px 13px;
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: min-content min-content auto min-content;
-	padding: 62px 0 0 100px;
+	padding: 62px 80px 40px 100px;
 }
 
 .window-heading {
@@ -1161,4 +1170,5 @@ padding: 10px 13px;
 	flex-direction: column;
 	margin-top: 0;
 	margin-bottom: 45px;
+
 }

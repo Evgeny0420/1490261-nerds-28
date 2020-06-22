@@ -14,7 +14,7 @@ loginClose.addEventListener("click", function (evt) {
 });
 
 submit.addEventListener("click", function (evt) {
-  evt.preventDefault();
+  evt.preventDefault();  
 });
 
 
