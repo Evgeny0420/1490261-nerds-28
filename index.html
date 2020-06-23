@@ -224,22 +224,22 @@
       </div>
     </footer>
     <section class="modal modal-window">
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form class="mail-forms" action="https://echo.htmlacademy.ru" method="get">
         <div class="mail-container">
           <h2 class="window-heading">Напишите нам</h2>
           <div class="name-email">
             <p>
               <label for="first-name">Ваше имя:</label>
-              <input class="mail-form" type="text" id="first-name" name="first-name" placeholder="Имя Фамилия">
+              <input class="mail-form name-form" type="text" id="first-name" name="first-name" placeholder="Имя Фамилия" required>
             </p>
             <p>
               <label for="first-name">Ваш email:</label>
-              <input class="mail-form " type="email" id="email" name="email" placeholder="email@example.com">
+              <input class="mail-form email-form" type="email" id="email" name="email" placeholder="email@example.com" required>
             </p>
           </div>
           <p class="textarea">
             <label for="text-mail">Текст письма:</label>
-            <textarea class="mail-form mail-textarea" id="text-mail" name="text-mail" placeholder="В свободной форме"></textarea>
+            <textarea class="mail-form mail-textarea" id="text-mail" name="text-mail" placeholder="В свободной форме" required></textarea>
           </p>
           <button class="most-links button-submit" type="submit">Отправить</button>
         </div>

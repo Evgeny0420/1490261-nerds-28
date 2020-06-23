@@ -1056,12 +1056,13 @@ fieldset {
 	left:50%;
 	z-index: 40;
 	display: none;
-    margin-left: -480px;
+  margin-left: -480px;
 	background: var(--basic-color);
 	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 .modal-show {
   display:block;
+  animation: bounce 0.6s;
 }
 
 .modal-window .mail-form {
@@ -1171,4 +1172,22 @@ fieldset {
 	margin-top: 0;
 	margin-bottom: 45px;
 
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
