@@ -31,6 +31,39 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
+var slidefirst = document.querySelector(".slide-first");
+var slidesecond = document.querySelector(".slide-second");
+var slidethird = document.querySelector(".slide-third");
+var firstbutton = document.querySelector(".first-button");
+var secondbutton = document.querySelector(".second-button");
+var thirdbutton = document.querySelector(".third-button");
+
+secondbutton.addEventListener("click", function () {
+  slidesecond.classList.add("slide-current");
+  secondbutton.classList.add("current");
+  firstbutton.classList.remove("current");
+  thirdbutton.classList.remove("current");
+  slidefirst.classList.remove("slide-current");
+  slidethird.classList.remove("slide-current");
+});
+
+firstbutton.addEventListener("click", function () {
+  slidefirst.classList.add("slide-current");
+  firstbutton.classList.add("current");
+  secondbutton.classList.remove("current");
+  thirdbutton.classList.remove("current");
+  slidesecond.classList.remove("slide-current");
+  slidethird.classList.remove("slide-current");
+});
+
+thirdbutton.addEventListener("click", function () {
+  slidethird.classList.add("slide-current");
+  thirdbutton.classList.add("current");
+  secondbutton.classList.remove("current");
+  firstbutton.classList.remove("current");
+  slidefirst.classList.remove("slide-current");
+  slidesecond.classList.remove("slide-current");
+});
 
 
 
