@@ -11,7 +11,7 @@ body {
 	min-width: 1180px;
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: var(--basic-text-color);
@@ -49,9 +49,11 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  text-align: center;
 	font-weight: 500;
 	line-height: 18px;
 	text-transform: uppercase;
+  min-height: 50px;
 	color: var(--basic-color);
 	background-color: var(--basic-button-color);
 	border-radius: 3px;
@@ -145,7 +147,7 @@ img {
 
 
 /* слайдер */
-.visualy-hidden {
+.visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -179,7 +181,6 @@ img {
 
 .slider-link {
 	width: 240px;
-	height: 50px;
 }
 
 .slider-flex {
@@ -230,7 +231,7 @@ img {
 }
 
 .slider-controls .current {
-	background-image: url(../img/ellipse_8.svg);
+	background-image: url(../img/ellipse.svg);
 	background-repeat: no-repeat;
 	background-position:center center;
 }
@@ -263,7 +264,6 @@ img {
 
 .service-block a {
 	width: 160px;
-	height: 50px;
 }
 
 .service-block-content .most-links {
@@ -449,18 +449,33 @@ img {
     opacity: 0.1;
 }
 
-
-
-
-
 /* контакты */
 .maps {
 	margin-top: 0;
+  position: relative;
 }
 
 iframe {
 	width: 100%;
 	border: none;
+}
+
+.map-img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-height: 416px;
+  position: absolute;
+  z-index: -2;
+}
+
+.map-marker {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: -1;
+  top: 86px;
+  left: 822px;
 }
 
 .contacts-container {
@@ -500,7 +515,6 @@ iframe {
 
 .mail-button {
 	width: 219px;
-	height: 50px;
 }
 /* футер */
 
@@ -508,7 +522,7 @@ iframe {
 	font-weight: bold;
 	font-size: 36px;
 	margin-bottom: 16px;
-	margin-top: 26px;
+	margin-top: 23px;
 }
 .footer {
 	display: flex;
@@ -778,10 +792,6 @@ iframe {
 	margin-bottom: 50px;
 }
 
-.legend-heading-cost {
-
-}
-
 .sorting {
 	display: flex;
 	justify-content: space-between;
@@ -803,7 +813,6 @@ iframe {
 
 .sorting-type {
 	display: flex;
-
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -887,7 +896,6 @@ fieldset {
 .button-filter {
 	border:0 none;
 	width: 260px;
-	height: 50px;
 	background: var(--header-color);
 	color: var(--basic-text-color);
 }
@@ -960,8 +968,8 @@ fieldset {
 
 
 .buy-order-button {
-    width: 200px;
-	height: 50px;
+  width: 200px;
+  min-height: 50px;
 	color: var(--basic-color);
 	background-color: var(--basic-button-color);
 	border-radius: 3px;
@@ -1015,7 +1023,6 @@ fieldset {
 
 .button-pagination {
 	width: 50px;
-    height: 50px;
 }
 
 .button-filter:hover {
@@ -1034,7 +1041,7 @@ fieldset {
 .button-pagination-active:active,
 .button-pagination-active:focus {
 	width:44px;
-	height:44px;
+	min-height:44px;
 	cursor: default;
     border: 3px solid #DBDBDB;
     background-color: var(--basic-color);
@@ -1124,7 +1131,6 @@ fieldset {
 .button-submit {
 	border: none;
 	width: 259px;
-	height: 50px;
 }
 
 .mail-container label {
