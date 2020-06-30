@@ -5,7 +5,6 @@ var submit = modalPopup.querySelector(".button-submit");
 
 
 
-
 mailLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalPopup.classList.add("modal-show");
