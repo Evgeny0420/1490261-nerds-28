@@ -37,8 +37,13 @@ modalClose.addEventListener("click", function (evt) {
 mailForms.addEventListener("submit", function (evt) {
   if (!nameForm.value || !emailForm.value || !mailTextarea.value ) {
     evt.preventDefault();
+    modalPopup.classList.remove("modal-error");
+    modalPopup.offsetWidth = modalPopup.offsetWidth;
+    modalPopup.classList.add("modal-error");
   } else {
-    localStorage.setItem("login", emailForm.value);
+    if (isStorageSupport) {
+      localStorage.setItem("login", emailForm.value);
+    }
   }
 });
 
@@ -49,13 +54,6 @@ window.addEventListener("keydown", function (evt) {
       modalPopup.classList.remove("modal-show");
       modalPopup.classList.remove("modal-error");
     }
-  }
-});
-
-mailForms.addEventListener("submit", function (evt) {
-  if (!nameForm.value || !emailForm.value || !mailTextarea.value ) {
-    evt.preventDefault();
-    modalPopup.classList.add("modal-error");
   }
 });
 
