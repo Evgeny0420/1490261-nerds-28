@@ -83,6 +83,8 @@ img {
   color: var(--basic-color);
   background-color: var(--basic-button-color);
   border-radius: 3px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .most-links:hover {
@@ -211,7 +213,7 @@ img {
 }
 
 .slider-link {
-  width: 208px;
+  width: 240px;
 }
 
 .slider-flex {
@@ -294,7 +296,7 @@ img {
 }
 
 .service-block a {
-  width: 128px;
+  width: 160px;
 }
 
 .service-block-content .most-links {
@@ -556,7 +558,7 @@ img {
 }
 
 .mail-button {
-  width: 187px;
+  width: 219px;
 }
 
 .footer h2 {
@@ -1006,12 +1008,14 @@ img {
   justify-content: start;
   align-items: center;
   text-align: center;
-  width: 255px;
+  width: 100%;
   min-height: 165px;
   background: var(--header-color);
   position: absolute;
   bottom: 0;
   padding: 22px 53px 44px 52px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .click-order {
@@ -1034,6 +1038,8 @@ img {
   cursor: pointer;
   margin: 0;
   border: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .buy-order-button:hover {
@@ -1080,11 +1086,11 @@ img {
 }
 
 .button-pagination-next {
-  min-width: 228px;
+  min-width: 260px;
 }
 
 .button-pagination {
-  min-width: 16px;
+  min-width: 50px;
   padding: 16px 17px;
 }
 
