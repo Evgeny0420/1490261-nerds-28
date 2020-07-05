@@ -986,7 +986,8 @@ img {
   border-radius: 4px 4px 0 0;
 }
 
-.link-product:hover {
+.link-product:hover,
+.link-product:focus {
   border-top: 40px solid var(--link-product-border-top-hover);
   box-shadow: 0 6px 15px var(--box-shadow-products);
 }
