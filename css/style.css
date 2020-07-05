@@ -1009,11 +1009,11 @@ img {
   align-items: center;
   text-align: center;
   width: 100%;
-  min-height: 165px;
+  min-height: 231px;
   background: var(--header-color);
   position: absolute;
   bottom: 0;
-  padding: 22px 53px 44px 52px;
+  padding: 26px 53px 47px 52px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
